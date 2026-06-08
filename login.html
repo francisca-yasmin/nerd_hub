@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="styles/login.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1 class="card-title">Bem‑vindo<br>de volta.</h1>
+    <p class="card-subtitle">Acesse sua conta para continuar.</p>
+    <div class="divider"></div>
+
+    <form id="login-form" novalidate>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="seu@email.com"
+          autocomplete="email"
+          required
+        >
+      </div>
+
+      <div class="form-group">
+        <label for="password">Senha</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="••••••••"
+          autocomplete="current-password"
+          required
+        >
+      </div>
+
+      <div class="form-extras">
+        <a href="#" class="link-small">Esqueceu a senha?</a>
+      </div>
+
+      <button type="submit" class="btn-primary">Entrar</button>
+    </form>
+
+    <div class="card-footer">
+      Não tem uma conta?
+      <a href="cadastro.html">Cadastre-se</a>
+    </div>
+  </div>
+
+  <!-- <script>
+    const form = document.getElementById('login-form');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const email    = form.email.value.trim();
+      const password = form.password.value;
+
+      if (!email || !password) {
+        alert('Preencha todos os campos.');
+        return;
+      }
+
+      // Aqui você faria a chamada para sua API
+      console.log('Login com:', { email, password });
+    });
+  </script> -->
+
+</body>
+</html>
